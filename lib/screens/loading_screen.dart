@@ -17,7 +17,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   void getLocation() async {
     position = await Geolocator()
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
     print(position);
   }
 
